@@ -1,0 +1,98 @@
+.header {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.header-nav {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+.header-logo {
+    width: 305px;
+    height: 42px;
+    margin: auto;
+}
+
+.sideNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    background: gray;
+}
+
+.sideNav-btn-close {
+    margin-top: 30px;
+}
+
+.sideNav-list {
+    list-style: none;
+}
+
+.sideNav-list.language {
+    display: flex;
+}
+
+.sideNav-list.language .sideNav-list-item {
+    margin-right: 25px;
+}
+
+.sideNav-list-item-link {
+    color: black;
+    text-decoration: none;
+}
+
+.footer {
+    height: 300px;
+    padding-bottom: 64px;
+    padding-top: 113px;
+}
+
+.footer-share {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 29px;
+}
+
+.footer-share-btns {
+    height: 24px;
+    width: 24px;
+    margin-left: 34px;
+}
+
+.footer-share-btns.btn-instagram {
+    margin-left: 20px;
+}
+
+.footer-copyright {
+    height: 29px;
+    margin-top: 18px;
+}
+
+.footer-others {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 29px;
+    margin-top: 18px;
+}
+
+.footer-others-links {
+    color: inherit;
+    text-decoration: inherit;
+    margin-left: 2px;
+}
+
+.footer-others-links.link-termsOfUse {
+    margin-left: 0;
+}
+
+.footer-others-links:hover {
+    color: cadetblue;
+    text-decoration: underline;
+}

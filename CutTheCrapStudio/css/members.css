@@ -1,0 +1,36 @@
+.main-title {
+    height: 600px;
+    background-color: azure;
+    padding-top: 200px;
+    padding-left: 100px;
+}
+
+.members-area-item {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.members-area-item-text {
+    margin: auto;
+}
+
+.members-area-item-image {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border: 10px solid #000;
+}
+
+.fourDims-area {
+    height: auto;
+}
+
+.fourDims-area p {
+    font-weight: normal;
+    width: auto;
+    text-align: center;
+}
+
+.fourDims-area-image {
+    height: 500px;
+}

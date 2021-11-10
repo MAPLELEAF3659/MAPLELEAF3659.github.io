@@ -1,0 +1,100 @@
+.heads-ani {
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+}
+
+.heads-ani div {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 0;
+    right: 0;
+    top: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: cadetblue;
+}
+
+.heads-ani-items.title {
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    text-align: center;
+}
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 613px;
+    width: 100%;
+    background-color: azure;
+}
+
+.slogan-title {
+    display: table-cell;
+    vertical-align: middle;
+    align-content: center;
+}
+
+.slogan-title-up {
+    text-align: left;
+}
+
+.slogan-title-down {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.recentWork-images {
+    display: flex;
+}
+
+.recentWork-images-current {
+    height: 800px;
+    background-color: azure;
+}
+
+.recentWork-images-next {
+    height: 600px;
+    background-color: azure;
+}
+
+.btn-previous {
+    width: 55px;
+    height: 55px;
+    background-image: url(image/btn_previous.png);
+}
+
+.btn-next {
+    width: 55px;
+    height: 55px;
+    background-image: url(image/btn_next.png);
+}
+
+.whatWeDo-title {
+    text-align: right;
+}
+
+.whatWeDo-subtitles-item-box {
+    display: flex;
+    width: 420px;
+    height: 425px;
+    background-color: azure;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-color: darkcyan;
+}
+
+.whatWeDo-subtitles-item-name {
+    width: 420px;
+    height: 142px;
+    text-align: center;
+    margin: auto;
+}
