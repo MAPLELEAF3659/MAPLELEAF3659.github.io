@@ -1,27 +1,54 @@
+body {
+    background-color: gainsboro;
+}
+
+.main-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    z-index: -2;
+    width: 17ch;
+    animation: typing 2s steps(19);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
 .heads-ani {
-    height: 800px;
+    height: 900px;
     align-items: center;
     justify-content: center;
 }
 
-.heads-ani div {
+.heads-ani-items {
     position: absolute;
-    width: 400px;
-    height: 400px;
     left: 0;
     right: 0;
-    top: 400px;
+    top: 300px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%;
-    background-color: cadetblue;
+    z-index: -1;
 }
 
-.heads-ani-items.title {
-    width: auto;
-    height: auto;
-    background-color: #fff;
-    text-align: center;
+.heads-ani-items.head {
+    width: 400px;
+    margin-top: 10px;
+}
+
+.heads-ani-items.logo {
+    width: 550px;
+}
+
+.heads-ani-items.hand {
+    margin-top: 300px;
+    width: 200px;
 }
 
 .slogan {
@@ -29,7 +56,8 @@
     justify-content: center;
     align-items: center;
     height: 613px;
-    width: 100%;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
     background-color: azure;
 }
 
@@ -37,6 +65,7 @@
     display: table-cell;
     vertical-align: middle;
     align-content: center;
+    opacity: 0;
 }
 
 .slogan-title-up {
@@ -48,18 +77,30 @@
     margin-left: 50px;
 }
 
-.recentWork-images {
-    display: flex;
+.splide__slide img {
+    transform: scale(0.8);
+    margin-top: 6%;
 }
 
-.recentWork-images-current {
-    height: 800px;
-    background-color: azure;
+.splide__slide.is-active img {
+    animation: slideScaleUp 0.5s;
+    transform: scale(1);
+    margin-top: 0;
 }
 
-.recentWork-images-next {
-    height: 600px;
-    background-color: azure;
+@keyframes slideScaleUp {
+    0% {
+        transform: scale(0.8);
+        margin-top: 6%;
+    }
+    100% {
+        transform: scale(1);
+        margin-top: 0;
+    }
+}
+
+.recentWork-images-list-item img {
+    height: 100%;
 }
 
 .btn-previous {
@@ -80,7 +121,6 @@
 
 .whatWeDo-subtitles-item-box {
     display: flex;
-    width: 420px;
     height: 425px;
     background-color: azure;
 }

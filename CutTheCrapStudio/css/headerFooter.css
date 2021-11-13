@@ -1,7 +1,6 @@
 .header {
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px auto;
 }
 
 .header-nav {
@@ -21,8 +20,9 @@
     top: 0;
     left: 0;
     bottom: 0;
-    width: 50%;
+    width: 40%;
     background: gray;
+    z-index: 99;
 }
 
 .sideNav-btn-close {
@@ -31,6 +31,7 @@
 
 .sideNav-list {
     list-style: none;
+    margin-left: 50px;
 }
 
 .sideNav-list.language {

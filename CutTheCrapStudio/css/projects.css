@@ -1,3 +1,7 @@
+body {
+    background-color: gainsboro;
+}
+
 .main-title {
     height: 600px;
     padding-top: 200px;
@@ -28,8 +32,12 @@
 }
 
 .display-image {
-    height: 592px;
+    height: auto;
     background-color: azure;
+}
+
+.display-image img {
+    width: 100%;
 }
 
 .ani-area-head {
