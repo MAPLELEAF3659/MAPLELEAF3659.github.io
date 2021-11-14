@@ -10,6 +10,7 @@
     line-height: 169px;
     letter-spacing: 0em;
     text-align: center;
+    color: #392A5F;
 }
 
 
@@ -36,6 +37,7 @@
     line-height: 165px;
     letter-spacing: 0em;
     text-align: left;
+    color: #392A5F;
 }
 
 
@@ -43,12 +45,13 @@
 
 .text-style-4 {
     font-family: Arial;
-    font-size: 100px;
+    font-size: 90px;
     font-style: normal;
     font-weight: 700;
-    line-height: 142px;
+    line-height: 128px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
+    color: #392A5F;
 }
 
 
@@ -75,6 +78,20 @@
     line-height: 86px;
     letter-spacing: 0em;
     text-align: left;
+}
+
+
+/* main-title */
+
+.text-style-7 {
+    font-family: Arial;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 282px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #392A5F;
 }
 
 

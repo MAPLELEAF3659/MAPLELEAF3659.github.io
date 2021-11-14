@@ -29,35 +29,39 @@
     <script>
         import Splide from '@splidejs/splide';
     </script>
+
     <header class="header align-items-center">
         <input class="header-nav" data-action="open" type="image" src="image/btn_nav.png" alt="btn_nav">
         <a class="header-logo" href="index.html"><img src="image/logo_header.png" alt="logo"></a>
     </header>
 
     <nav class="sideNav">
-        <input class="sideNav-btn-close" type="image" src="image/btn_close.png" alt="btn_nav">
-        <ul class="sideNav-list main">
-            <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="index.html">CtC!
-                        Studio</a></li>
-            <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="projects.html">Our
-                        Works</a></li>
-            <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="members.html">Members</a></li>
-            <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="#">Contact
-                        Us</a>
-            </li>
-        </ul>
-        <ul class="sideNav-list social">
-            <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-sub" href="#">Facebook</a>
-            </li>
-            <li class="sideNav-list-item"> <a class="sideNav-list-item-link text-style-nav-sub" href="#">Instagram</a>
-            </li>
-        </ul>
-        <ul class="sideNav-list language">
-            <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-language" href="#">中</a>
-            </li>
-            <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-language" href="#">Eng</a>
-            </li>
-        </ul>
+        <div class="sideNav__left">
+            <input class="sideNav-btn-close" type="image" src="image/btn_close.png" alt="btn_nav">
+            <ul class="sideNav-list main">
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="index.html">CtC!
+                                Studio</a></li>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="projects.html">Our
+                                Works</a></li>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="members.html">Members</a></li>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="#">Contact
+                                Us</a>
+                </li>
+            </ul>
+            <ul class="sideNav-list social">
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-sub" href="#">Facebook</a>
+                </li>
+                <li class="sideNav-list-item"> <a class="sideNav-list-item-link text-style-nav-sub" href="#">Instagram</a>
+                </li>
+            </ul>
+            <ul class="sideNav-list language">
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-language" href="#">中</a>
+                </li>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-language" href="#">Eng</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sideNav__bg"></div>
     </nav>
 
     <div class="container">
@@ -92,10 +96,10 @@
                             <img src="image/works/work_3d_3.jpg" alt="work_imgs">
                         </li>
                         <li class="splide__slide recentWork-images-list-item">
-                            <img src="image/works/work_3d_2.jpg" alt="work_imgs">
+                            <img src="image/works/work_3d_1.jpg" alt="work_imgs">
                         </li>
                         <li class="splide__slide recentWork-images-list-item">
-                            <img src="image/works/work_3d_3.jpg" alt="work_imgs">
+                            <img src="image/works/work_3d_2.jpg" alt="work_imgs">
                         </li>
                         <li class="splide__slide recentWork-images-list-item">
                             <img src="image/works/work_3d_3.jpg" alt="work_imgs">
@@ -109,40 +113,52 @@
             <div class="whatWeDo-subtitles">
                 <div class="row">
                     <div class="col-12 col-lg-4 whatWeDo-subtitles-item">
-                        <div class="whatWeDo-subtitles-item-box">
-                            <div data-tilt data-tilt-scale="1.1" class="image"></div>
+                        <div class="whatWeDo-subtitles-item-box" data-tilt>
+                            <img class="frame" src="image/indexAni/whatwedo_frame.png" alt="frame">
+                            <img class="image img-digital" src="image/indexAni/digital.png" alt="digital-img">
+                            <img class="bg" src="image/indexAni/whatwedo_bg.png" alt="bg">
                         </div>
                         <div class="whatWeDo-subtitles-item-name text-style-4">Digital</div>
                     </div>
                     <div class="col-12 col-lg-4 whatWeDo-subtitles-item">
-                        <div class="whatWeDo-subtitles-item-box">
-                            <div data-tilt data-tilt-scale="1.1" class="image"></div>
+                        <div class="whatWeDo-subtitles-item-box" data-tilt>
+                            <img class="frame" src="image/indexAni/whatwedo_frame.png" alt="frame">
+                            <img class="image img-visual" src="image/indexAni/visual.png" alt="visual-img">
+                            <img class="bg" src="image/indexAni/whatwedo_bg.png" alt="bg">
                         </div>
                         <div class="whatWeDo-subtitles-item-name text-style-4">Visual</div>
                     </div>
                     <div class="col-12 col-lg-4 whatWeDo-subtitles-item">
-                        <div class="whatWeDo-subtitles-item-box">
-                            <div data-tilt data-tilt-scale="1.1" class="image"></div>
+                        <div class="whatWeDo-subtitles-item-box" data-tilt>
+                            <img class="frame" src="image/indexAni/whatwedo_frame.png" alt="frame">
+                            <img class="image img-3d" src="image/indexAni/3d.png" alt="3d-img">
+                            <img class="bg" src="image/indexAni/whatwedo_bg.png" alt="bg">
                         </div>
                         <div class="whatWeDo-subtitles-item-name text-style-4">3D</div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 col-lg-4 whatWeDo-subtitles-item">
-                        <div class="whatWeDo-subtitles-item-box">
-                            <div data-tilt data-tilt-scale="1.1" class="image"></div>
+                        <div class="whatWeDo-subtitles-item-box" data-tilt>
+                            <img class="frame" src="image/indexAni/whatwedo_frame.png" alt="frame">
+                            <img class="image img-uiux" src="image/indexAni/uiux.png" alt="uiux-img">
+                            <img class="bg" src="image/indexAni/whatwedo_bg.png" alt="bg">
                         </div>
                         <div class="whatWeDo-subtitles-item-name text-style-4">UI/UX</div>
                     </div>
                     <div class="col-12 col-lg-4 whatWeDo-subtitles-item">
-                        <div class="whatWeDo-subtitles-item-box">
-                            <div data-tilt data-tilt-scale="1.1" class="image"></div>
+                        <div class="whatWeDo-subtitles-item-box" data-tilt>
+                            <img class="frame" src="image/indexAni/whatwedo_frame.png" alt="frame">
+                            <img class="image img-game" src="image/indexAni/game.png" alt="game-img">
+                            <img class="bg" src="image/indexAni/whatwedo_bg.png" alt="bg">
                         </div>
                         <div class="whatWeDo-subtitles-item-name text-style-4">Game</div>
                     </div>
                     <div class="col-12 col-lg-4 whatWeDo-subtitles-item">
-                        <div class="whatWeDo-subtitles-item-box">
-                            <div data-tilt data-tilt-scale="1.1" class="image"></div>
+                        <div class="whatWeDo-subtitles-item-box" data-tilt>
+                            <img class="frame" src="image/indexAni/whatwedo_frame.png" alt="frame">
+                            <img class="image img-website" src="image/indexAni/website.png" alt="website-img">
+                            <img class="bg" src="image/indexAni/whatwedo_bg.png" alt="bg">
                         </div>
                         <div class="whatWeDo-subtitles-item-name text-style-4">Website</div>
                     </div>
@@ -177,6 +193,7 @@
             clones: 5,
             perPage: 3,
             autoplay: true,
+            pauseOnHover: false,
             heightRatio: 0.4,
             autoWidth: true,
             arrows: false,

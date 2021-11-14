@@ -7,17 +7,17 @@ $(function() {
         .offset(350)
         .addTo(controller);
 
-    scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", duration: 125 })
+    scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", duration: 150 })
         .setPin("#head2")
         .offset(350)
         .addTo(controller);
 
-    scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", duration: 250 })
+    scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", duration: 300 })
         .setPin("#head3")
         .offset(350)
         .addTo(controller);
 
-    scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", duration: 400 })
+    scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", duration: 525 })
         .setPin("#logo")
         .offset(350)
         .addTo(controller);

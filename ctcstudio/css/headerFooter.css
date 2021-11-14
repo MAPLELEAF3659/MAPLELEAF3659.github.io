@@ -16,13 +16,24 @@
 }
 
 .sideNav {
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 40%;
-    background: gray;
+    width: 100%;
     z-index: 99;
+}
+
+.sideNav__left {
+    width: 40%;
+    background: white;
+}
+
+.sideNav__bg {
+    width: 60%;
+    background: gray;
+    opacity: 50%;
 }
 
 .sideNav-btn-close {

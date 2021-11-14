@@ -14,9 +14,12 @@
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.sidebar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <title>Cut the Crap Studio | Projects</title>
+    <script src="js/jarallax.min.js"></script>
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax-video.min.js"></script>
+
+    <title>Cut the Crap Studio | Our Works</title>
 </head>
 
 <body>
@@ -26,97 +29,109 @@
     </header>
 
     <nav class="sideNav">
-        <input class="sideNav-btn-close" type="image" src="image/btn_close.png" alt="btn_nav">
-        <ul class="sideNav-list main">
-            <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="index.html">CtC! Studio</a></li>
-            <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="projects.html">Our Works</a></li>
-            <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="members.html">Members</a></li>
-            <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="#">Contact Us</a></li>
-        </ul>
-        <ul class="sideNav-list social">
-            <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-sub" href="#">Facebook</a></li>
-            <li class="sideNav-list-item"> <a class="sideNav-list-item-link text-style-nav-sub" href="#">Instagram</a></li>
-        </ul>
-        <ul class="sideNav-list language">
-            <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-language" href="#">中</a></li>
-            <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-language" href="#">Eng</a></li>
-        </ul>
+        <div class="sideNav__left">
+            <input class="sideNav-btn-close" type="image" src="image/btn_close.png" alt="btn_nav">
+            <ul class="sideNav-list main">
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="index.html">CtC!
+                                Studio</a></li>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="projects.html">Our
+                                Works</a></li>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="members.html">Members</a></li>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="#">Contact
+                                Us</a>
+                </li>
+            </ul>
+            <ul class="sideNav-list social">
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-sub" href="#">Facebook</a>
+                </li>
+                <li class="sideNav-list-item"> <a class="sideNav-list-item-link text-style-nav-sub" href="#">Instagram</a>
+                </li>
+            </ul>
+            <ul class="sideNav-list language">
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-language" href="#">中</a>
+                </li>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-language" href="#">Eng</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sideNav__bg"></div>
     </nav>
 
     <div class="container">
-        <div class="main-title">
-            <p class="main-title-text text-style-3">Our Works</p>
-            <div class="main-circle" data-speed="1"></div>
-            <div class="main-circle" data-speed="1"></div>
-            <div class="main-circle" data-speed="1"></div>
-            <div class="main-circle" data-speed="1"></div>
+        <div class="main-title" id="trigger1">
+            <p class="main-title-text text-style-7">Our Works</p>
+            <img class="main-circle" src="image/worksAni/tv1.png" data-speed="0.5"></img>
+            <img class="main-circle" src="image/worksAni/tv2.png" data-speed="0.8"></img>
+            <img class="main-circle" src="image/worksAni/tv3.png" data-speed="0.7"></img>
+            <img class="main-circle" src="image/worksAni/hand.png" data-speed="0.4"></img>
         </div>
         <div class="work-area">
-            <div class="row work-area">
+            <div class="row work-area-item">
                 <div class="col-8 col-md-7 display-area">
                     <p class="display-title text-style-6">Design</p>
-                    <div class="display-image">
-                        <img src="image/works/work_design_1.jpg" alt="display-image">
+                    <div class="display-image jarallax">
+                        <img class="jarallax-img" src="image/works/work_design_1.jpg" alt="display-image">
                     </div>
                 </div>
                 <div class="d-none d-md-block col-md-1 ani-area">
-                    <img class="ani-area-head" src="image/pacHead.png" alt="head"></img>
-                    <div class="ani-area-line"></div>
+                    <div id="trigger1"></div>
+                    <img class="ani-area-head" id="head1" src="image/worksAni/pacHead.gif" alt="head"></img>
+                    <div class="ani-area-line" id="line1"></div>
                 </div>
-                <div class="col-4 col-md-4 desription text-style-5">Lorem ipsuptas quasi eligendi cum assumenda quaerat?</div>
+                <div class="col-4 col-md-4 desription text-style-5">Poster design. Impossible -> I'm possible.</div>
             </div>
-            <div class="row work-area">
-                <div class="col-4 col-md-4 desription text-style-5">Lorem ipsuptas quasi eligendi cum assumenda quaerat?</div>
+            <div class="row work-area-item">
+                <div class="col-4 col-md-4 desription text-style-5">A room for resting, chating. Made with 3Ds Max.</div>
                 <div class="d-none d-md-block col-md-1 ani-area">
-                    <img class="ani-area-head" src="image/pacHead.png" alt="head"></img>
-                    <div class="ani-area-line"></div>
+                    <div id="trigger2"></div>
+                    <img class="ani-area-head" id="head2" src="image/worksAni/pacHead.gif" alt="head"></img>
+                    <div class="ani-area-line" id="line2"></div>
                 </div>
 
                 <div class="col-8 col-md-7 display-area">
                     <p class="display-title text-style-6">3D</p>
-                    <div class="display-image">
-                        <img src="image/works/work_3d_1.jpg" alt="display-image">
+                    <div class="display-image jarallax">
+                        <img class="jarallax-img" src="image/works/work_3d_2.jpg" alt="display-image">
                     </div>
                 </div>
             </div>
-            <div class="row work-area">
+            <div class="row work-area-item">
                 <div class="col-8 col-md-7 display-area">
-                    <p class="display-title text-style-6">Title</p>
-                    <div class="display-image">
-                        <img src="" alt="display-image">
-                    </div>
+                    <p class="display-title text-style-6">AE showreel 1</p>
+                    <div class="display-image jarallax" data-jarallax-video="https://youtu.be/bRrUxiL06jA"></div>
                 </div>
                 <div class="d-none d-md-block col-md-1 ani-area">
-                    <img class="ani-area-head" src="image/pacHead.png" alt="head"></img>
-                    <div class="ani-area-line"></div>
+                    <div id="trigger3"></div>
+                    <img class="ani-area-head" id="head3" src="image/worksAni/pacHead.gif" alt="head"></img>
+                    <div class="ani-area-line" id="line3"></div>
                 </div>
-                <div class="col-4 col-md-4 desription text-style-5">Lorem ipsuptas quasi eligendi cum assumenda quaerat?</div>
+                <div class="col-4 col-md-4 desription text-style-5">This is an After Effect showreel including text animation, tracking, FUI design, etc.</div>
             </div>
-            <div class="row work-area">
-                <div class="col-4 col-md-4 desription text-style-5">Lorem ipsuptas quasi eligendi cum assumenda quaerat?</div>
+            <div class="row work-area-item">
+                <div class="col-4 col-md-4 desription text-style-5">This is an After Effect showreel including text animation, tracking, FUI design, etc.</div>
                 <div class="d-none d-md-block col-md-1 ani-area">
-                    <img class="ani-area-head" src="image/pacHead.png" alt="head"></img>
-                    <div class="ani-area-line"></div>
+                    <div id="trigger4"></div>
+                    <img class="ani-area-head" id="head4" src="image/worksAni/pacHead.gif" alt="head"></img>
+                    <div class="ani-area-line" id="line4"></div>
                 </div>
                 <div class="col-8 col-md-7 display-area">
-                    <p class="display-title text-style-6">Title</p>
-                    <div class="display-image">
-                        <img src="" alt="display-image">
-                    </div>
+                    <p class="display-title text-style-6">AE showreel 2</p>
+                    <div class="display-image jarallax" data-jarallax-video="https://youtu.be/GKyEXIzcFQs"></div>
                 </div>
             </div>
-            <div class="row work-area">
+            <div class="row work-area-item">
                 <div class="col-8 col-md-7 display-area">
-                    <p class="display-title text-style-6">Title</p>
-                    <div class="display-image">
-                        <img src="" alt="display-image">
+                    <p class="display-title text-style-6">Bad Taste Radar</p>
+                    <div class="display-image jarallax">
+                        <iframe width="100%" height="100%" src="https://restaurantscoringapp.web.app/" frameborder="0"></iframe>
                     </div>
                 </div>
                 <div class="d-none d-md-block col-md-1 ani-area">
-                    <img class="ani-area-head" src="image/pacHead.png" alt="head"></img>
-                    <div class="ani-area-line"></div>
+                    <div id="trigger5"></div>
+                    <img class="ani-area-head" id="head5" src="image/worksAni/pacHead.gif" alt="head"></img>
+                    <div class="ani-area-line" id="line5"></div>
                 </div>
-                <div class="col-4 col-md-4 desription text-style-5">Lorem ipsuptas quasi eligendi cum assumenda quaerat?</div>
+                <div class="col-4 col-md-4 desription text-style-5">A tool to give you total restaurant rating by every rating website.</div>
             </div>
         </div>
     </div>
@@ -137,6 +152,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
     <script src="js/sideNav.js"></script>
     <script src="js/projects.js"></script>
 </body>
