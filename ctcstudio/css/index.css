@@ -1,0 +1,235 @@
+.main-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    z-index: -2;
+    width: 13ch;
+    animation: typing 2s steps(13);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+.heads-ani {
+    height: 1000px;
+    align-items: center;
+    justify-content: center;
+}
+
+.heads-ani-items {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+}
+
+.heads-ani-items.head {
+    width: 400px;
+    margin-top: 10px;
+}
+
+.heads-ani-items.logo {
+    width: 550px;
+}
+
+.heads-ani-items.hand {
+    width: 200px;
+    margin-top: 300px;
+}
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    background-color: #392A5F;
+}
+
+.slogan-title {
+    display: table-cell;
+    vertical-align: middle;
+    align-content: center;
+    opacity: 0;
+    color: #FFF2AC;
+}
+
+.slogan-title-up {
+    text-align: left;
+}
+
+.slogan-title-down {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.recentWork {
+    background-color: #FFE5DA;
+}
+
+.recentWork-title {
+    margin-bottom: 16px;
+}
+
+.splide__slide img {
+    transform: scale(0.8);
+    margin-top: 6%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.splide__slide.is-active img {
+    animation: slideScaleUp 0.5s;
+    transform: scale(1);
+    margin-top: 0;
+}
+
+@keyframes slideScaleUp {
+    0% {
+        transform: scale(0.8);
+        margin-top: 6%;
+    }
+    100% {
+        transform: scale(1);
+        margin-top: 0;
+    }
+}
+
+.whatWeDo-title {
+    text-align: right;
+    margin-bottom: 16px;
+}
+
+.whatWeDo-subtitles-item {
+    position: relative;
+}
+
+.whatWeDo-subtitles-item-box {
+    position: relative;
+    height: 440px;
+    width: auto;
+    transform-style: preserve-3d;
+}
+
+.frame {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3;
+    transform: translateZ(80px);
+    filter: drop-shadow(-14px 13px 11px rgba(0, 0, 0, 0.25));
+}
+
+.image {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    object-fit: contain;
+    transform: translateZ(40px);
+    filter: drop-shadow(0px -9px 11px rgba(0, 0, 0, 0.25));
+}
+
+.bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    transform: translateZ(10px);
+}
+
+.whatWeDo-subtitles-item-name {
+    width: auto;
+    height: 120px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.img-3d {
+    top: 5%;
+}
+
+.img-game {
+    top: 20%;
+}
+
+@media (max-width:992px) {
+    .heads-ani {
+        height: 900px;
+    }
+    .heads-ani-items {
+        top: 250px;
+    }
+    .heads-ani-items.head {
+        width: 300px;
+        margin-top: 20px;
+    }
+    .heads-ani-items.logo {
+        width: 412.5px;
+    }
+    .heads-ani-items.hand {
+        width: 150px;
+        margin-top: 250px;
+    }
+    .recentWork-title {
+        margin-bottom: 0;
+    }
+    .whatWeDo-title {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:576px) {
+    .heads-ani {
+        height: 800px;
+    }
+    .heads-ani-items {
+        top: 150px;
+    }
+    .heads-ani-items.head {
+        width: 150px;
+        margin-top: 10px;
+    }
+    .heads-ani-items.logo {
+        width: 225px;
+        margin-top: 40px;
+    }
+    .heads-ani-items.hand {
+        width: 100px;
+        margin-top: 175px;
+    }
+    .slogan {
+        height: 200px;
+    }
+    .frame {
+        transform: scale(0.9);
+    }
+    .image {
+        transform: scale(0.9);
+    }
+    .bg {
+        transform: scale(0.85);
+    }
+    .whatWeDo-subtitles-item-name {
+        margin-top: 10px;
+        height: 70px;
+    }
+}
