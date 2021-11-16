@@ -14,38 +14,45 @@
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.sidebar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
     <title>Cut the Crap Studio | Members</title>
 </head>
 
 <body>
-    <header class="header align-items-center">
-        <input class="header-nav" type="image" src="image/btn_nav.png" alt="btn_nav">
-        <a class="header-logo" href="index.html"><img src="image/logo_header.png" alt="logo"></a>
+    <header class="row header align-items-center">
+        <input class="col-1 header-nav" data-action="open" type="image" src="image/btn_nav.png" alt="btn_nav">
+        <a class="col-11 header-logo" href="index.html">
+            <img src="image/logo_header.png" alt="logo_text" height="100%" width="auto">
+        </a>
     </header>
 
     <nav class="sideNav">
         <div class="sideNav__left">
             <input class="sideNav-btn-close" type="image" src="image/btn_close.png" alt="btn_nav">
             <ul class="sideNav-list main">
-                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="index.html">CtC!
-                                Studio</a></li>
-                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="projects.html">Our
-                                Works</a></li>
-                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="members.html">Members</a></li>
-                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-main" href="#">Contact
-                                Us</a>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-subtitle" href="index.html">CtC!
+                        Studio</a></li>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-subtitle" href="projects.html">Our
+                        Works</a></li>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-subtitle" href="members.html">Members</a></li>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-subtitle" href="#">Contact
+                        Us</a>
                 </li>
             </ul>
             <ul class="sideNav-list social">
-                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-sub" href="#">Facebook</a>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-subtitle" href="#">Facebook</a>
                 </li>
-                <li class="sideNav-list-item"> <a class="sideNav-list-item-link text-style-nav-sub" href="#">Instagram</a>
+                <li class="sideNav-list-item"> <a class="sideNav-list-item-link text-style-subtitle" href="#">Instagram</a>
                 </li>
             </ul>
             <ul class="sideNav-list language">
-                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-language" href="#">中</a>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-subtitle" href="#">中</a>
                 </li>
-                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-nav-language" href="#">Eng</a>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-subtitle" href="#">Eng</a>
                 </li>
             </ul>
         </div>
@@ -53,40 +60,64 @@
     </nav>
 
     <div class="container">
-        <div class="main-title text-style-2">
-            3 CREATERS<br>with Enthusiasm
+        <div class="d-none d-xl-block draw-ani-line" id="line">
         </div>
+        <div class="d-none d-xl-block draw-ani-hand" id="hand">
+            <img src="image/membersAni/hand.png" alt="hand">
+        </div>
+        <div class="main-title text-style-slogan">3 CREATERS<br>with Enthusiasm</div>
+        <div id="trigger1"></div>
         <div class="members-area">
-            <div class="row align-items-center justify-content-around members-area-item">
-                <div class="col-12 col-md-5 members-area-item-text">
-                    <p class="text text-style-6">NAME</p>
-                    <p class="title text-style-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, quos?</p>
+            <div id="trigger2"></div>
+            <div class="row members-area-item img-right" id="item2">
+                <div class="col-12 col-md members-area-item-text">
+                    <p class="text text-style-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, quos?
+                    </p>
+                    <p class="title text-style-subtitle">Terry Zhou</p>
                 </div>
-                <div class="col-12 col-md-5 members-area-item-image"></div>
+                <div class="col-12 col-md members-area-item-image">
+                    <div class="image"></div>
+                </div>
             </div>
-            <div class="row align-items-center justify-content-around members-area-item">
-                <div class="col-12 col-md-5 members-area-item-text">
-                    <p class="text text-style-6">NAME</p>
-                    <p class="title text-style-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, quos?</p>
+            <div id="trigger3"></div>
+            <div class="row members-area-item img-left" id="item3">
+                <div class="col-12 col-md members-area-item-text">
+                    <p class="text text-style-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, quos?
+                    </p>
+                    <p class="title text-style-subtitle">YanQi Chen</p>
                 </div>
-                <div class="col-12 col-md-5 members-area-item-image"></div>
+                <div class="col-12 col-md members-area-item-image">
+                    <div class="image"></div>
+                </div>
             </div>
-            <div class="row align-items-center justify-content-around members-area-item">
-                <div class="col-12 col-md-5 members-area-item-text">
-                    <p class="text text-style-6">NAME</p>
-                    <p class="title text-style-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, quos?</p>
+            <div id="trigger4"></div>
+            <div class="row members-area-item img-right" id="item4">
+                <div class="col-12 col-md members-area-item-text">
+                    <p class="text text-style-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, quos?
+                    </p>
+                    <p class="title text-style-subtitle">CJ Chang</p>
                 </div>
-                <div class="col-12 col-md-5 members-area-item-image"></div>
+                <div class="col-12 col-md members-area-item-image">
+                    <div class="image"></div>
+                </div>
             </div>
         </div>
+        <div id="trigger5"></div>
         <div class="fourDims-area">
-            <p class="planing text-style-6">Planing</p>
+            <p class="planing text-style-subtitle">Planing</p>
             <div class="row justify-content-between align-items-center">
-                <p class="col coding text-style-6">Coding</p>
-                <div class="col fourDims-area-image"></div>
-                <p class="col design text-style-6">Design</p>
+                <p class="col-1 coding text-style-subtitle">Coding</p>
+                <div class="col-10 fourDims-area-image">
+                    <img class="fourDims-area-image-box bg" src="image/membersAni/fourDims_bg.png" alt="fourDims_bg">
+                    <img class="fourDims-area-image-box hor" src="image/membersAni/line_box_horizontal.png" alt="line_box_horizontal">
+                    <img class="fourDims-area-image-box ver" src="image/membersAni/line_box_vertical.png" alt="line_box_vertical">
+                    <img class="fourDims-area-image-box head" id="head1" src="image/membersAni/head1.png" alt="head1">
+                    <img class="fourDims-area-image-box head" id="head2" src="image/membersAni/head2.png" alt="head2">
+                    <img class="fourDims-area-image-box head" id="head3" src="image/membersAni/head3.png" alt="head3">
+                </div>
+                <p class="col-1 design text-style-subtitle">Design</p>
             </div>
-            <p class="implement text-style-6">Implement</p>
+            <p class="implement text-style-subtitle">Implement</p>
         </div>
     </div>
 
@@ -105,8 +136,9 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/sideNav.js"></script>
+    <script src="js/members.js"></script>
 </body>
 
 </html>

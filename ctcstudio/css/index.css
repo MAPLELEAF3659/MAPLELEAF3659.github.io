@@ -1,7 +1,3 @@
-body {
-    background-color: #FFD5D5;
-}
-
 .main-title {
     position: absolute;
     left: 0;
@@ -9,8 +5,8 @@ body {
     margin: 0 auto;
     text-align: center;
     z-index: -2;
-    width: 17ch;
-    animation: typing 2s steps(19);
+    width: 13ch;
+    animation: typing 2s steps(13);
     white-space: nowrap;
     overflow: hidden;
 }
@@ -47,15 +43,15 @@ body {
 }
 
 .heads-ani-items.hand {
-    margin-top: 300px;
     width: 200px;
+    margin-top: 300px;
 }
 
 .slogan {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 613px;
+    height: 400px;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     background-color: #392A5F;
@@ -76,6 +72,14 @@ body {
 .slogan-title-down {
     text-align: left;
     margin-left: 50px;
+}
+
+.recentWork {
+    background-color: #FFE5DA;
+}
+
+.recentWork-title {
+    margin-bottom: 16px;
 }
 
 .splide__slide img {
@@ -102,20 +106,9 @@ body {
     }
 }
 
-.btn-previous {
-    width: 55px;
-    height: 55px;
-    background-image: url(image/btn_previous.png);
-}
-
-.btn-next {
-    width: 55px;
-    height: 55px;
-    background-image: url(image/btn_next.png);
-}
-
 .whatWeDo-title {
     text-align: right;
+    margin-bottom: 16px;
 }
 
 .whatWeDo-subtitles-item {
@@ -135,9 +128,9 @@ body {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    height: auto;
     z-index: 3;
-    transform: translateZ(30px);
+    transform: translateZ(80px);
+    filter: drop-shadow(-14px 13px 11px rgba(0, 0, 0, 0.25));
 }
 
 .image {
@@ -149,7 +142,8 @@ body {
     margin-right: auto;
     z-index: 2;
     object-fit: contain;
-    transform: translateZ(20px);
+    transform: translateZ(40px);
+    filter: drop-shadow(0px -9px 11px rgba(0, 0, 0, 0.25));
 }
 
 .bg {
@@ -163,10 +157,10 @@ body {
 }
 
 .whatWeDo-subtitles-item-name {
-    width: 420px;
-    height: 142px;
+    width: auto;
+    height: 120px;
     text-align: center;
-    margin: auto;
+    margin-top: 50px;
 }
 
 .img-3d {
@@ -175,4 +169,67 @@ body {
 
 .img-game {
     top: 20%;
+}
+
+@media (max-width:992px) {
+    .heads-ani {
+        height: 900px;
+    }
+    .heads-ani-items {
+        top: 250px;
+    }
+    .heads-ani-items.head {
+        width: 300px;
+        margin-top: 20px;
+    }
+    .heads-ani-items.logo {
+        width: 412.5px;
+    }
+    .heads-ani-items.hand {
+        width: 150px;
+        margin-top: 250px;
+    }
+    .recentWork-title {
+        margin-bottom: 0;
+    }
+    .whatWeDo-title {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:576px) {
+    .heads-ani {
+        height: 800px;
+    }
+    .heads-ani-items {
+        top: 150px;
+    }
+    .heads-ani-items.head {
+        width: 150px;
+        margin-top: 10px;
+    }
+    .heads-ani-items.logo {
+        width: 225px;
+        margin-top: 40px;
+    }
+    .heads-ani-items.hand {
+        width: 100px;
+        margin-top: 175px;
+    }
+    .slogan {
+        height: 200px;
+    }
+    .frame {
+        transform: scale(0.9);
+    }
+    .image {
+        transform: scale(0.9);
+    }
+    .bg {
+        transform: scale(0.85);
+    }
+    .whatWeDo-subtitles-item-name {
+        margin-top: 10px;
+        height: 70px;
+    }
 }

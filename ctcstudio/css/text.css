@@ -1,96 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-/* main-page-text */
-
-.text-style-1 {
+.text-style-title {
     font-family: Arial;
-    font-size: 120px;
+    font-size: 7.5rem;
     font-style: normal;
     font-weight: 900;
     line-height: 169px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: left;
     color: #392A5F;
 }
 
-
-/* slogan */
-
-.text-style-2 {
+.text-style-subtitle {
     font-family: Arial;
-    font-size: 115px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 132px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-
-/* title */
-
-.text-style-3 {
-    font-family: Arial;
-    font-size: 117px;
+    font-size: 3.75rem;
     font-style: normal;
     font-weight: 900;
-    line-height: 165px;
+    line-height: 74px;
     letter-spacing: 0em;
     text-align: left;
     color: #392A5F;
 }
 
-
-/* subtitle */
-
-.text-style-4 {
+.text-style-slogan {
     font-family: Arial;
-    font-size: 90px;
+    font-size: 4.375rem;
     font-style: normal;
-    font-weight: 700;
-    line-height: 128px;
+    font-weight: 900;
+    line-height: 99px;
     letter-spacing: 0em;
-    text-align: center;
-    color: #392A5F;
+    text-align: left;
 }
 
-
-/* text */
-
-.text-style-5 {
+.text-style-text {
     font-family: 'Times New Roman';
-    font-size: 48px;
+    font-size: 2.3125rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 59px;
+    line-height: 46px;
     letter-spacing: -0.015em;
     text-align: left;
-}
-
-
-/* small subtitle */
-
-.text-style-6 {
-    font-family: 'Times New Roman';
-    font-size: 75px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 86px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-
-/* main-title */
-
-.text-style-7 {
-    font-family: Arial;
-    font-size: 200px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 282px;
-    letter-spacing: 0em;
-    text-align: center;
     color: #392A5F;
 }
 
@@ -99,43 +47,49 @@
 
 .text-style-footer {
     font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0em;
     text-align: center;
+    color: #392A5F;
 }
 
-
-/* nav */
-
-.text-style-nav-main {
-    font-family: Arial;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 90px;
-    letter-spacing: 0em;
-    text-align: left;
+@media (max-width:992px) {
+    .text-style-title {
+        font-size: 5rem;
+    }
+    .text-style-subtitle {
+        font-size: 2.75rem;
+    }
+    .text-style-slogan {
+        font-size: 3.75rem;
+    }
+    .text-style-text {
+        font-size: 1.2rem;
+    }
+    .text-style-footer {
+        font-size: 1rem;
+    }
 }
 
-.text-style-nav-sub {
-    font-family: Arial;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 80px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-.text-style-nav-language {
-    font-family: Arial;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px;
-    letter-spacing: 0em;
-    text-align: left;
+@media (max-width:576px) {
+    .text-style-title {
+        font-size: 2.5rem;
+        line-height: 90px;
+    }
+    .text-style-subtitle {
+        font-size: 2.75rem;
+    }
+    .text-style-slogan {
+        font-size: 1.5rem;
+        line-height: 25px;
+    }
+    .text-style-text {
+        font-size: 1.2rem;
+    }
+    .text-style-footer {
+        font-size: 1rem;
+    }
 }
