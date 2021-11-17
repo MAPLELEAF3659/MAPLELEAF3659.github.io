@@ -113,6 +113,11 @@
 
 .recentWork-title {
     margin-bottom: 16px;
+    text-decoration: none;
+}
+
+.recentWork-title:hover {
+    color: #6950A9;
 }
 
 .recentWork-deco {
@@ -148,8 +153,16 @@
 }
 
 .whatWeDo-title {
-    text-align: right;
+    text-decoration: none;
     margin-bottom: 16px;
+}
+
+.whatWeDo-title p {
+    text-align: right;
+}
+
+.whatWeDo-title p:hover {
+    color: #6950A9;
 }
 
 .whatWeDo-subtitles-item {
