@@ -112,7 +112,7 @@
 }
 
 .recentWork-title {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     text-decoration: none;
 }
 
@@ -154,11 +154,11 @@
 
 .whatWeDo-title {
     text-decoration: none;
-    margin-bottom: 16px;
 }
 
 .whatWeDo-title p {
     text-align: right;
+    margin-bottom: 40px;
 }
 
 .whatWeDo-title p:hover {
@@ -257,7 +257,7 @@
         right: 20vw;
         bottom: -50px;
     }
-    .whatWeDo-title {
+    .whatWeDo-title p {
         margin-bottom: 0;
     }
 }
