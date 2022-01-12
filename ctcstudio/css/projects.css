@@ -22,6 +22,7 @@
     position: relative;
     background-color: transparent;
     height: auto;
+    width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -39,7 +40,7 @@
 }
 
 .work-area-item {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .work-area-bg {
@@ -82,8 +83,7 @@
 }
 
 .desription {
-    height: 100%;
-    padding-top: 7%;
+    height: auto;
 }
 
 @media (max-width:992px) {

@@ -18,40 +18,65 @@
 }
 
 .heads-ani {
-    height: 1000px;
+    height: 1200px;
     align-items: center;
     justify-content: center;
 }
 
 .heads-ani-items {
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 300px;
     margin-left: auto;
     margin-right: auto;
     z-index: -1;
 }
 
 .heads-ani-items.head {
-    width: 400px;
-    margin-top: 10px;
+    width: 250px;
+}
+
+
+/* cj */
+
+#head1 {
+    right: 100px;
+    top: 500px;
+}
+
+
+/* con */
+
+#head2 {
+    right: 300px;
+    top: 900px;
+}
+
+
+/* me */
+
+#head3 {
+    left: 150px;
+    top: 400px;
 }
 
 .heads-ani-items.logo {
     width: 550px;
+    left: 0;
+    right: 0;
+    top: 500px;
 }
 
 .heads-ani-items.hand {
     width: 200px;
-    margin-top: 300px;
+    left: 150px;
+    right: 0;
+    top: 800px;
 }
 
 .heads-ani-decos {
     position: absolute;
     width: auto;
     height: 350px;
-    z-index: -3;
+    z-index: -2;
 }
 
 .deco-paper1 {
@@ -76,7 +101,27 @@
 
 .deco-hand {
     bottom: -5vh;
-    right: 4vw;
+    left: 4vw;
+    z-index: -1;
+}
+
+.heads-ani-bg {
+    position: absolute;
+    z-index: -3;
+}
+
+.heads-ani-bg.bg-building-with-road {
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 400px;
+    /* height: auto; */
+}
+
+.heads-ani-bg.bg-building {
+    width: 40%;
+    left: 30vw;
+    top: 500px;
 }
 
 .slogan {
@@ -225,26 +270,54 @@
     top: 20%;
 }
 
-@media (max-width:992px) {
+@media (max-width:1440px) {
     .heads-ani {
-        height: 900px;
+        height: 1000px;
+    }
+}
+
+@media (max-width:1024px) {
+    .heads-ani {
+        height: 750px;
     }
     .heads-ani-items {
         top: 250px;
     }
     .heads-ani-items.head {
-        width: 300px;
+        width: 150px;
         margin-top: 20px;
     }
+    /* cj */
+    #head1 {
+        right: 25px;
+        top: 400px;
+    }
+    /* con */
+    #head2 {
+        right: 75px;
+        top: 600px;
+    }
+    /* me */
+    #head3 {
+        left: 100px;
+        top: 500px;
+    }
     .heads-ani-items.logo {
-        width: 412.5px;
+        width: 350px;
+        top: 450px;
     }
     .heads-ani-items.hand {
         width: 150px;
-        margin-top: 250px;
+        top: 650px;
     }
     .heads-ani-decos {
         height: 250px;
+    }
+    .heads-ani-bg.bg-building-with-road {
+        top: 350px;
+    }
+    .heads-ani-bg.bg-building {
+        top: 350px;
     }
     .recentWork {
         margin-bottom: 10px;
@@ -262,27 +335,85 @@
     }
 }
 
+@media (max-width:768px) {
+    .heads-ani {
+        height: 550px;
+    }
+    .heads-ani-items.logo {
+        width: 250px;
+        top: 300px;
+    }
+    .heads-ani-items.hand {
+        width: 100px;
+        right: 50px;
+        top: 450px;
+    }
+    /* cj */
+    #head1 {
+        right: 25px;
+        top: 250px;
+    }
+    /* con */
+    #head2 {
+        right: 75px;
+        top: 450px;
+    }
+    /* me */
+    #head3 {
+        left: 50px;
+        top: 300px;
+    }
+    .heads-ani-bg.bg-building-with-road {
+        top: 300px;
+    }
+    .heads-ani-bg.bg-building {
+        top: 300px;
+    }
+}
+
 @media (max-width:576px) {
     .heads-ani {
-        height: 800px;
+        height: 325px;
     }
     .heads-ani-items {
         top: 150px;
     }
     .heads-ani-items.head {
-        width: 150px;
+        width: 75px;
         margin-top: 10px;
     }
+    /* cj */
+    #head1 {
+        right: 25px;
+        top: 200px;
+    }
+    /* con */
+    #head2 {
+        right: 75px;
+        top: 300px;
+    }
+    /* me */
+    #head3 {
+        left: 50px;
+        top: 250px;
+    }
     .heads-ani-items.logo {
-        width: 225px;
-        margin-top: 40px;
+        width: 150px;
+        top: 225px;
     }
     .heads-ani-items.hand {
-        width: 100px;
-        margin-top: 175px;
+        width: 50px;
+        right: 100px;
+        top: 300px;
     }
     .heads-ani-decos {
         height: 150px;
+    }
+    .heads-ani-bg.bg-building-with-road {
+        top: 200px;
+    }
+    .heads-ani-bg.bg-building {
+        top: 200px;
     }
     .slogan {
         height: 200px;

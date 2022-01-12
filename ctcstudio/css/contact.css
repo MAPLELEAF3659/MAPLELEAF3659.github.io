@@ -1,0 +1,69 @@
+.main-title {
+    position: relative;
+    height: 60vh;
+}
+
+.main-title-image {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.main-title-text {
+    position: absolute;
+    right: 50px;
+    top: 200px;
+    color: #392A5F;
+}
+
+.contents {
+    position: relative;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.contents::before {
+    content: "";
+    background-color: #FFFAEA;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 150%;
+    left: -25%;
+    padding: 0 50px;
+    z-index: -1;
+}
+
+.map {
+    margin: 50px auto;
+}
+
+.info {
+    margin-top: 100px;
+}
+
+.form-inputs-boxs-item {
+    margin: 50px auto;
+}
+
+.form-inputs-titles-item {
+    margin: 50px auto;
+}
+
+.form-message-input {
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+}
+
+.form-btn-sent {
+    border: solid 5px #392A5F;
+    color: #392A5F;
+}
+
+.form-btn-sent:hover {
+    background-color: gray;
+}

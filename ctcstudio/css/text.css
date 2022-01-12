@@ -19,6 +19,9 @@
     letter-spacing: 0em;
     text-align: left;
     color: #392A5F;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
 }
 
 .text-style-slogan {
@@ -40,6 +43,9 @@
     letter-spacing: -0.015em;
     text-align: left;
     color: #392A5F;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
 }
 
 
@@ -56,15 +62,15 @@
     color: #392A5F;
 }
 
-@media (max-width:992px) {
+@media (max-width:1024px) {
     .text-style-title {
-        font-size: 5rem;
+        font-size: 6.25rem;
     }
     .text-style-subtitle {
         font-size: 2.75rem;
     }
     .text-style-slogan {
-        font-size: 3.75rem;
+        font-size: 4.25rem;
     }
     .text-style-text {
         font-size: 1.8rem;
@@ -79,10 +85,10 @@
         font-size: 4.25rem;
     }
     .text-style-subtitle {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .text-style-slogan {
-        font-size: 2.75rem;
+        font-size: 3.25rem;
     }
     .text-style-text {
         font-size: 1.6rem;
@@ -98,11 +104,11 @@
         line-height: 90px;
     }
     .text-style-subtitle {
-        font-size: 2.75rem;
+        font-size: 2.25rem;
     }
     .text-style-slogan {
-        font-size: 1.5rem;
-        line-height: 25px;
+        font-size: 1.75rem;
+        line-height: 40px;
     }
     .text-style-text {
         font-size: 1.2rem;

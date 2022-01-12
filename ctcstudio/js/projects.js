@@ -1,6 +1,6 @@
 var controller = new ScrollMagic.Controller();
 var scene;
-var pacHeadDuration = 400;
+var pacHeadDuration = 350;
 
 var mainAreaHeight = $('.main-title-text').height(); // container height
 var mainAreaWidth = $('.main-title').width(); // container width
@@ -9,14 +9,7 @@ var lineHeight = $(".ani-area-line").height();
 var lineMarginTop = $(".ani-area-line").css("margin-top");
 
 $(function() {
-    $(".main-circle").each(function() {
-        randomtop = Math.random() * mainAreaHeight + 100;
-        randomleft = Math.random() * mainAreaWidth - 24;
-        $(this).css({
-            'top': randomtop,
-            'left': randomleft
-        });
-    });
+    resetCirclePos();
 
     //pac head
     scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", duration: pacHeadDuration })
@@ -70,6 +63,20 @@ $(window).scroll(function() {
         });
     });
 })
+
+$(window).resize(resetCirclePos());
+
+function resetCirclePos() {
+    $(".main-circle").each(function() {
+        randomtop = Math.random() * mainAreaHeight + 150;
+        randomleft = Math.random() * mainAreaWidth - 24;
+        $(this).css({
+            'top': randomtop,
+            'left': randomleft
+        });
+    });
+}
+
 
 objectFitImages();
 
