@@ -45,6 +45,10 @@
     margin-top: 100px;
 }
 
+.info-item-text {
+    line-height: 1.15;
+}
+
 .form-inputs-boxs-item {
     margin: 50px auto;
 }
@@ -66,4 +70,31 @@
 
 .form-btn-sent:hover {
     background-color: gray;
+}
+
+@media (max-width:1024px) {
+    .main-title {
+        height: 350px;
+    }
+}
+
+@media (max-width:768px) {
+    .main-title {
+        height: 250px;
+    }
+    .info-item-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:576px) {
+    .main-title {
+        height: 150px;
+    }
+    .info-item-title {
+        font-size: 1.5rem;
+    }
+    .info-item-text {
+        font-size: 1rem;
+    }
 }

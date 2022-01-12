@@ -18,7 +18,7 @@
 }
 
 .heads-ani {
-    height: 1200px;
+    height: 1100px;
     align-items: center;
     justify-content: center;
 }
@@ -272,13 +272,13 @@
 
 @media (max-width:1440px) {
     .heads-ani {
-        height: 1000px;
+        height: 950px;
     }
 }
 
 @media (max-width:1024px) {
     .heads-ani {
-        height: 750px;
+        height: 675px;
     }
     .heads-ani-items {
         top: 250px;
@@ -373,7 +373,7 @@
 
 @media (max-width:576px) {
     .heads-ani {
-        height: 325px;
+        height: 300px;
     }
     .heads-ani-items {
         top: 150px;
