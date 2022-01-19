@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/headerFooter.css">
+    <link rel="stylesheet" href="css/members.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sidebar/3.3.2/jquery.sidebar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+    <title>Cut the Crap Studio | Members</title>
+</head>
+
+<body>
+    <header class="row header align-items-center" id="header">
+        <input class="col-1 header-nav" data-action="open" type="image" src="image/btn_nav.png" alt="btn_nav">
+        <a class="col-11 header-logo" href="index.html">
+            <img src="image/logo_header.png" alt="logo_text" height="100%" width="auto">
+        </a>
+    </header>
+
+    <nav class="sideNav">
+        <div class="sideNav__left">
+            <input class="sideNav-btn-close" type="image" src="image/btn_close.png" alt="btn_nav">
+            <ul class="sideNav-list main">
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-subtitle" href="index.html">CtC!
+                        Studio</a></li>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-subtitle" href="projects.html">Our
+                        Works</a></li>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-subtitle" href="members.html">Members</a></li>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-subtitle" href="contact.html">Contact
+                        Us</a>
+                </li>
+            </ul>
+            <ul class="sideNav-list social">
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-subtitle" href="#">Facebook</a>
+                </li>
+                <li class="sideNav-list-item"> <a class="sideNav-list-item-link text-style-subtitle" href="#">Instagram</a>
+                </li>
+            </ul>
+            <ul class="sideNav-list language">
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-subtitle" href="#">中</a>
+                </li>
+                <li class="sideNav-list-item"><a class="sideNav-list-item-link text-style-subtitle" href="#">Eng</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sideNav__bg"></div>
+    </nav>
+
+    <div class="container">
+        <div class="d-none d-xl-block draw-ani-line" id="line">
+        </div>
+        <div class="d-none d-xl-block draw-ani-hand" id="hand">
+            <img src="image/membersAni/hand.png" alt="hand">
+        </div>
+        <div class="main-title">
+            <img class="main-title-image" id="title-image1" src="image/membersAni/bg1.png" alt="title_img">
+            <img class="main-title-image" id="title-image2" src="image/membersAni/bg2.png" alt="title_img">
+            <img class="main-title-image" id="title-image3" src="image/membersAni/bg3.png" alt="title_img">
+            <p class="main-title-text text-style-slogan">3 CREATERS<br>with Enthusiasm</p>
+        </div>
+    </div>
+    <div class="contents container-fluid">
+        <div id="trigger1"></div>
+        <div class="members-area container">
+            <div id="trigger2"></div>
+            <div class="row members-area-item img-right" id="item2">
+                <div class="col col-md members-area-item-text">
+                    <p class="text text-style-text">Lead programmer.<br>Good at website, game, mobile application development.
+                    </p>
+                    <p class="title text-style-subtitle">Terry Zhou</p>
+                </div>
+                <div class="col-auto col-md members-area-item-image">
+                    <div class="image">
+                        <img class="image-ori" src="image/membersAni/person1.png" alt="person1" height="auto" width="100%">
+                        <img class="image-alt" src="image/membersAni/person1_alt.png" alt="person1" height="auto" width="100%">
+                    </div>
+                    <img class="image-deco__hand" src="image/membersAni/members_img_hand.png" alt="members_img_hand">
+                </div>
+            </div>
+            <div id="trigger3"></div>
+            <div class="row members-area-item img-left" id="item3">
+                <div class="col col-md members-area-item-text">
+                    <p class="text text-style-text">Lead designer.<br>Good at website design, poster design, character design, 3D modeling.
+                    </p>
+                    <p class="title text-style-subtitle">YanQi Chen</p>
+                </div>
+                <div class="col-auto col-md members-area-item-image">
+
+                    <div class="image">
+                        <img class="image-ori" src="image/membersAni/person2.png" alt="person2" height="auto" width="100%">
+                        <img class="image-alt" src="image/membersAni/person2_alt.png" alt="person2" height="auto" width="100%">
+                    </div>
+                    <img class="image-deco__hand" src="image/membersAni/members_img_hand.png" alt="members_img_hand">
+                </div>
+            </div>
+            <div id="trigger4"></div>
+            <div class="row members-area-item img-right" id="item4">
+                <div class="col col-md members-area-item-text">
+                    <p class="text text-style-text">Lead UI/UX designer.<br>Good at website, mobile application, game's UI design and UX research.
+                    </p>
+                    <p class="title text-style-subtitle">CJ Chang</p>
+                </div>
+                <div class="col-auto col-md members-area-item-image">
+
+                    <div class="image">
+                        <img class="image-ori" src="image/membersAni/person3.png" alt="person3" height="auto" width="100%">
+                        <img class="image-alt" src="image/membersAni/person3_alt.png" alt="person3" height="auto" width="100%">
+                    </div>
+                    <img class="image-deco__hand" src="image/membersAni/members_img_hand.png" alt="members_img_hand">
+                </div>
+            </div>
+            <img class="d-none d-lg-block members-area-bg" src="image/membersAni/bg_members.png" alt="background"></img>
+        </div>
+        <div id="trigger5"></div>
+        <div class="fourDims-area container">
+            <p class="planing text-style-subtitle">Planing</p>
+            <div class="row justify-content-between align-items-center">
+                <p class="col coding text-style-subtitle">Coding</p>
+                <div class="col-10 fourDims-area-image">
+                    <img class="fourDims-area-image-box bg" src="image/membersAni/fourDims_bg.png" alt="fourDims_bg">
+                    <img class="fourDims-area-image-box hor" src="image/membersAni/line_box_horizontal.png" alt="line_box_horizontal">
+                    <img class="fourDims-area-image-box ver" src="image/membersAni/line_box_vertical.png" alt="line_box_vertical">
+                    <img class="fourDims-area-image-box head" id="head1" src="image/membersAni/head1.png" alt="head1">
+                    <img class="fourDims-area-image-box head" id="head2" src="image/membersAni/head2.png" alt="head2">
+                    <img class="fourDims-area-image-box head" id="head3" src="image/membersAni/head3.png" alt="head3">
+                </div>
+                <p class="col design text-style-subtitle">Design</p>
+            </div>
+            <p class="implement text-style-subtitle">Implement</p>
+
+            <img class="d-none d-xl-block fourDims-area-bg" src="image/membersAni/bg_fourDims.png" alt="background"></img>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-share text-style-footer">
+            Share：
+            <input class="footer-share-btns btn-instagram" type="image" src="image/btn_instagram.png" alt="btn_instagram"></img>
+            <input class="footer-share-btns btn-facebook" type="image" src="image/btn_facebook.png" alt="btn_facebook"></img>
+            <input class="footer-share-btns btn-twitter" type="image" src="image/btn_twitter.png" alt="btn_twitter"></img>
+        </div>
+        <div class="footer-copyright text-style-footer">Copyright &copy Cut the Carp Studio. All right reversed.</div>
+        <div class="footer-others">
+            <a class="footer-others-links link-termsOfUse text-style-footer" href="notfind.html">Terms of Use.</a>
+            <a class="footer-others-links link-policy text-style-footer" href="notfind.html">Privacy Policy.</a>
+            <a class="footer-others-links link-language text-style-footer" href="#header">Language</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/sideNav.js"></script>
+    <script src="js/members.js"></script>
+</body>
+
+</html>

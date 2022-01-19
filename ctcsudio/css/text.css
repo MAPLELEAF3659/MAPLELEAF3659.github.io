@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.text-style-title {
+    font-family: Arial;
+    font-size: 7.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 169px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #392A5F;
+}
+
+.text-style-subtitle {
+    font-family: Arial;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 74px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #392A5F;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+}
+
+.text-style-slogan {
+    font-family: Arial;
+    font-size: 4.375rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 99px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.text-style-text {
+    font-family: 'Times New Roman';
+    font-size: 2.3125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    color: #392A5F;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+}
+
+
+/* footer */
+
+.text-style-footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #392A5F;
+}
+
+@media (max-width:1024px) {
+    .text-style-title {
+        font-size: 6.15rem;
+    }
+    .text-style-subtitle {
+        font-size: 2.65rem;
+    }
+    .text-style-slogan {
+        font-size: 4.25rem;
+    }
+    .text-style-text {
+        font-size: 1.8rem;
+    }
+    .text-style-footer {
+        font-size: 1.375rem;
+    }
+}
+
+@media (max-width:768px) {
+    .text-style-title {
+        font-size: 4.25rem;
+    }
+    .text-style-subtitle {
+        font-size: 2.5rem;
+    }
+    .text-style-slogan {
+        font-size: 3.25rem;
+    }
+    .text-style-text {
+        font-size: 1.6rem;
+    }
+    .text-style-footer {
+        font-size: 1.375rem;
+    }
+}
+
+@media (max-width:576px) {
+    .text-style-title {
+        font-size: 2.5rem;
+        line-height: 90px;
+    }
+    .text-style-subtitle {
+        font-size: 2.25rem;
+    }
+    .text-style-slogan {
+        font-size: 1.75rem;
+        line-height: 40px;
+    }
+    .text-style-text {
+        font-size: 1.2rem;
+    }
+    .text-style-footer {
+        font-size: 1rem;
+    }
+}

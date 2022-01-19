@@ -1,0 +1,161 @@
+.main-title {
+    position: relative;
+    height: 550px;
+}
+
+.main-title-image {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.main-title-text {
+    position: absolute;
+    right: 50px;
+    top: 200px;
+    color: #392A5F;
+}
+
+.contents {
+    position: relative;
+    height: auto;
+    padding-bottom: 50px;
+    background-color: #FFFAEA;
+}
+
+.map {
+    margin: 50px auto;
+    height: 720px;
+}
+
+.info {
+    margin-top: 100px;
+}
+
+.info-item {
+    opacity: 0;
+}
+
+.info-item-img {
+    height: 100%;
+    padding: 0 0;
+}
+
+.info-item-text {
+    line-height: 1.15;
+}
+
+.form-title {
+    text-align: center;
+}
+
+.form-inputs-boxs-item {
+    margin: 50px auto;
+}
+
+.form-inputs-boxs-item-title {
+    width: auto;
+}
+
+.form-inputs-boxs-item-input {
+    border: #392A5F solid 5px;
+}
+
+.form-inputs-boxs-item-input::placeholder {
+    color: #392A5F;
+    opacity: 0.75;
+}
+
+.form-inputs-boxs-message-title {
+    text-align: left;
+    padding-left: 12px;
+    margin: 10px auto;
+}
+
+.form-inputs-boxs-message-text {
+    border: #392A5F solid 5px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.form-inputs-boxs-message-text::placeholder {
+    color: #392A5F;
+    opacity: 0.75;
+}
+
+.form-btn-sent {
+    border: solid 5px #392A5F;
+    color: #392A5F;
+    font-size: 2rem;
+    line-height: normal;
+    height: 75px;
+}
+
+.form-btn-sent:hover {
+    background-color: gray;
+}
+
+@media (max-width:1024px) {
+    .main-title {
+        height: 350px;
+    }
+    .map {
+        height: 600px;
+    }
+    .form-inputs-boxs-item {
+        margin: 30px auto;
+    }
+}
+
+@media (max-width:768px) {
+    .main-title {
+        height: 250px;
+    }
+    .main-title-text {
+        top: 75px;
+    }
+    .info-item-title {
+        font-size: 2rem;
+    }
+    .map {
+        height: 350px;
+    }
+}
+
+@media (max-width:576px) {
+    .main-title {
+        height: 175px;
+    }
+    .main-title-text {
+        top: 50px;
+        right: 0px;
+    }
+    .info-item-title {
+        font-size: 1.5rem;
+    }
+    .info-item-text {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .map {
+        height: 200px;
+    }
+}
+
+@media (max-width:475px) {
+    .main-title {
+        height: 125px;
+    }
+}
+
+@media (max-width:375px) {
+    .main-title {
+        height: 75px;
+    }
+    .form-inputs-boxs-item-title {
+        line-height: 1.2;
+    }
+}
