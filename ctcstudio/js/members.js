@@ -75,6 +75,18 @@ $(function() {
         .addTo(controller);
 });
 
+$(window).scroll(function() {
+    $("#title-image1").css({
+        'margin-top': -$(window).scrollTop() * 0.25
+    });
+    $("#title-image2").css({
+        'margin-top': -$(window).scrollTop() * 0.4
+    });
+    $("#title-image3").css({
+        'margin-top': -$(window).scrollTop() * 0.55
+    });
+});
+
 $(".image").each(function() {
     $(jQuery(this).children(".image-alt")).fadeOut(0);
     $(this).hover(

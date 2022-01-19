@@ -2,33 +2,8 @@ var controller = new ScrollMagic.Controller();
 var scene;
 
 $(function() {
-    // scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", duration: 25 })
-    //     .setPin("#head1")
-    //     .offset(350)
-    //     .addTo(controller);
-
-    // scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", duration: 150 })
-    //     .setPin("#head2")
-    //     .offset(350)
-    //     .addTo(controller);
-
-    // scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", duration: 300 })
-    //     .setPin("#head3")
-    //     .offset(350)
-    //     .addTo(controller);
-
-    // scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", duration: 525 })
-    //     .setPin("#logo")
-    //     .offset(350)
-    //     .addTo(controller);
-
-    // scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", duration: 600 })
-    //     .setPin("#hand")
-    //     .offset(350)
-    //     .addTo(controller);
-
     scene = new ScrollMagic.Scene({
-            triggerElement: "#trigger2",
+            triggerElement: "#trigger-subtitle",
             duration: 0,
             triggerHook: 0.8
         })
@@ -43,4 +18,37 @@ $(window).scroll(function() {
     $(".bg-building").css({
         'margin-top': -$(window).scrollTop() * 0.4
     });
+
+    $(".head").each(function() {
+        var speed = $(this).data("speed");
+        $(this).css({
+            'margin-top': -$(window).scrollTop() * speed
+        });
+    });
+    $("#chatBox-head").css({
+        'margin-top': -$(window).scrollTop() * 0.2
+    });
+});
+
+var clickIndex = 0;
+var clicked = false;
+var messages = ["Shhhh!", "Scroll down!", "Hello,there!", "Welcome!"];
+$(".heads-ani").click(function() {
+    if (clicked) {
+        $(".chatBox").each(function() {
+            $(this).removeClass("isOn");
+        });
+        clicked = false;
+    } else {
+        if (clickIndex == 0) {
+            $("#chatBox-logo").toggleClass("isOn");
+            $("#chatBox-logo p").html(messages[Math.floor(Math.random() * messages.length)]);
+            clickIndex = 1;
+        } else if (clickIndex == 1) {
+            $("#chatBox-head").toggleClass("isOn");
+            $("#chatBox-head p").html(messages[Math.floor(Math.random() * messages.length)]);
+            clickIndex = 0;
+        }
+        clicked = true;
+    }
 });

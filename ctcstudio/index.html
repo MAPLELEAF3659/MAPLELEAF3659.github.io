@@ -69,10 +69,9 @@
     <div class="container">
         <div class="main-title text-style-title" style="line-height: normal;">Cut the Crap!<br>Studio</div>
         <div class="heads-ani align-middle">
-            <div id="trigger1"></div>
-            <img class="heads-ani-items head" src="image/indexAni/head1.png" alt="head1" id="head1">
-            <img class="heads-ani-items head" src="image/indexAni/head2.png" alt="head2" id="head2">
-            <img class="heads-ani-items head" src="image/indexAni/head3.png" alt="head3" id="head3">
+            <img class="heads-ani-items head" src="image/indexAni/head1.png" alt="head1" id="head1" data-speed="0.6">
+            <img class="heads-ani-items head" src="image/indexAni/head2.png" alt="head2" id="head2" data-speed="0.4">
+            <img class="heads-ani-items head" src="image/indexAni/head3.png" alt="head3" id="head3" data-speed="0.2">
             <img class="heads-ani-items logo" src="image/logo.png" alt="logo" id="logo">
             <img class="heads-ani-items hand" src="image/indexAni/hand.png" alt="hand" id="hand">
             <img class="heads-ani-decos deco-paper1" src="image/indexAni/deco_paper1.png" alt="deco_paper1">
@@ -82,49 +81,55 @@
             <img class="heads-ani-decos deco-hand" src="image/indexAni/deco_hand.png" alt="deco_hand">
             <img class="heads-ani-bg bg-building-with-road" src="image/indexAni/buildings_with_road.png" alt="buildings_with_road" id="bg_building_road">
             <img class="heads-ani-bg bg-building" src="image/indexAni/building.png" alt="building" id="bg_building">
+            <div class="row align-items-center chatBox" id="chatBox-head">
+                <p class="col text-style-slogan">Shhhhhh!</p>
+            </div>
+            <div class="row align-items-center chatBox" id="chatBox-logo">
+                <p class="col text-style-slogan">Scroll down!</p>
+            </div>
         </div>
         <div class="slogan">
             <div class="slogan-title" id="slogan-title">
                 <p class="slogan-title-up text-style-slogan">Cut the Crap!</p>
                 <p class="slogan-title-down text-style-slogan">And get the job done!</p>
-                <div id="trigger2"></div>
+                <div id="trigger-subtitle"></div>
             </div>
         </div>
-        <div class="recentWork">
-            <a class="recentWork-title text-style-title" href="projects.html">Recent Work</a>
-            <div class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list recentWork-images-list">
-                        <li class="splide__slide recentWork-images-list-item">
-                            <img src="image/works/work_3d_1.jpg" alt="work_imgs">
-                        </li>
-                        <li class="splide__slide recentWork-images-list-item">
-                            <img src="image/works/work_3d_2.jpg" alt="work_imgs">
-                        </li>
-                        <li class="splide__slide recentWork-images-list-item">
-                            <img src="image/works/work_3d_3.jpg" alt="work_imgs">
-                        </li>
-                        <li class="splide__slide recentWork-images-list-item">
-                            <img src="image/works/work_3d_1.jpg" alt="work_imgs">
-                        </li>
-                        <li class="splide__slide recentWork-images-list-item">
-                            <img src="image/works/work_3d_2.jpg" alt="work_imgs">
-                        </li>
-                        <li class="splide__slide recentWork-images-list-item">
-                            <img src="image/works/work_3d_3.jpg" alt="work_imgs">
-                        </li>
-                    </ul>
+        <div class="contents container-fluid">
+            <div class="recentWork container">
+                <a class="recentWork-title text-style-title" href="projects.html">Recent Work</a>
+                <div class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list recentWork-images-list">
+                            <li class="splide__slide recentWork-images-list-item">
+                                <img src="image/works/work_3d_1.jpg" alt="work_imgs">
+                            </li>
+                            <li class="splide__slide recentWork-images-list-item">
+                                <img src="image/works/work_3d_2.jpg" alt="work_imgs">
+                            </li>
+                            <li class="splide__slide recentWork-images-list-item">
+                                <img src="image/works/work_3d_3.jpg" alt="work_imgs">
+                            </li>
+                            <li class="splide__slide recentWork-images-list-item">
+                                <img src="image/works/work_3d_1.jpg" alt="work_imgs">
+                            </li>
+                            <li class="splide__slide recentWork-images-list-item">
+                                <img src="image/works/work_3d_2.jpg" alt="work_imgs">
+                            </li>
+                            <li class="splide__slide recentWork-images-list-item">
+                                <img src="image/works/work_3d_3.jpg" alt="work_imgs">
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="recentWork-deco" src="image/indexAni/deco_recentWork.png" alt="deco_recentWork">
                 </div>
-                <img class="recentWork-deco" src="image/indexAni/deco_recentWork.png" alt="deco_recentWork">
             </div>
-        </div>
-        <div class="whatWeDo">
-            <a class="whatWeDo-title" href="members.html">
-                <p class="text-style-title">What we do?</p>
-            </a>
-            <div class="whatWeDo-subtitles">
-                <div class="row">
-                    <div class="col-12 col-lg-6 col-xxl-4 whatWeDo-subtitles-item">
+            <div class="container whatWeDo">
+                <a class="whatWeDo-title" href="members.html">
+                    <p class="text-style-title">What we do?</p>
+                </a>
+                <div class="row whatWeDo-subtitles justify-content-around">
+                    <div class="col-6 col-md-5 col-xl-4 whatWeDo-subtitles-item">
                         <div class="whatWeDo-subtitles-item-box" data-tilt>
                             <img class="frame" src="image/indexAni/whatwedo_frame.png" alt="frame">
                             <img class="image img-digital" src="image/indexAni/digital.png" alt="digital-img">
@@ -132,7 +137,7 @@
                         </div>
                         <div class="whatWeDo-subtitles-item-name text-style-subtitle">Digital</div>
                     </div>
-                    <div class="col-12 col-lg-6 col-xxl-4 whatWeDo-subtitles-item">
+                    <div class="col-6 col-md-5 col-xl-4 whatWeDo-subtitles-item">
                         <div class="whatWeDo-subtitles-item-box" data-tilt>
                             <img class="frame" src="image/indexAni/whatwedo_frame.png" alt="frame">
                             <img class="image img-visual" src="image/indexAni/visual.png" alt="visual-img">
@@ -140,7 +145,7 @@
                         </div>
                         <div class="whatWeDo-subtitles-item-name text-style-subtitle">Visual</div>
                     </div>
-                    <div class="col-12 col-lg-6 col-xxl-4 whatWeDo-subtitles-item">
+                    <div class="col-6 col-md-5 col-xl-4 whatWeDo-subtitles-item">
                         <div class="whatWeDo-subtitles-item-box" data-tilt>
                             <img class="frame" src="image/indexAni/whatwedo_frame.png" alt="frame">
                             <img class="image img-3d" src="image/indexAni/3d.png" alt="3d-img">
@@ -148,7 +153,7 @@
                         </div>
                         <div class="whatWeDo-subtitles-item-name text-style-subtitle">3D</div>
                     </div>
-                    <div class="col-12 col-lg-6 col-xxl-4 whatWeDo-subtitles-item">
+                    <div class="col-6 col-md-5 col-xl-4 whatWeDo-subtitles-item">
                         <div class="whatWeDo-subtitles-item-box" data-tilt>
                             <img class="frame" src="image/indexAni/whatwedo_frame.png" alt="frame">
                             <img class="image img-uiux" src="image/indexAni/uiux.png" alt="uiux-img">
@@ -156,7 +161,7 @@
                         </div>
                         <div class="whatWeDo-subtitles-item-name text-style-subtitle">UI/UX</div>
                     </div>
-                    <div class="col-12 col-lg-6 col-xxl-4 whatWeDo-subtitles-item">
+                    <div class="col-6 col-md-5 col-xl-4 whatWeDo-subtitles-item">
                         <div class="whatWeDo-subtitles-item-box" data-tilt>
                             <img class="frame" src="image/indexAni/whatwedo_frame.png" alt="frame">
                             <img class="image img-game" src="image/indexAni/game.png" alt="game-img">
@@ -164,7 +169,7 @@
                         </div>
                         <div class="whatWeDo-subtitles-item-name text-style-subtitle">Game</div>
                     </div>
-                    <div class="col-12 col-lg-6 col-xxl-4 whatWeDo-subtitles-item">
+                    <div class="col-6 col-md-5 col-xl-4 whatWeDo-subtitles-item">
                         <div class="whatWeDo-subtitles-item-box" data-tilt>
                             <img class="frame" src="image/indexAni/whatwedo_frame.png" alt="frame">
                             <img class="image img-website" src="image/indexAni/website.png" alt="website-img">
@@ -175,6 +180,7 @@
                 </div>
             </div>
         </div>
+
     </div>
     <footer class="footer">
         <div class="footer-share text-style-footer">

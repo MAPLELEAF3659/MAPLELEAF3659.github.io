@@ -64,15 +64,17 @@ $(window).scroll(function() {
     });
 })
 
-$(window).resize(resetCirclePos());
+$(window).resize(function() {
+    resetCirclePos();
+});
 
 function resetCirclePos() {
     $(".main-circle").each(function() {
         randomtop = Math.random() * mainAreaHeight + 150;
-        randomleft = Math.random() * mainAreaWidth - 24;
+        randomright = Math.random() * mainAreaWidth - 24;
         $(this).css({
             'top': randomtop,
-            'left': randomleft
+            'right': randomright
         });
     });
 }

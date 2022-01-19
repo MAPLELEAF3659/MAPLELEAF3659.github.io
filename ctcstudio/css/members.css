@@ -1,3 +1,7 @@
+.contents {
+    background-color: #FFFAEA;
+}
+
 .main-title {
     position: relative;
     height: 600px;
@@ -8,8 +12,8 @@
 
 .main-title-image {
     position: absolute;
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -248,19 +252,6 @@
     transform: rotate(-10deg);
 }
 
-.members-area::before,
-.fourDims-area::before {
-    content: "";
-    background-color: #FFFAEA;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 150%;
-    left: -25%;
-    padding: 0 50px;
-    z-index: -1;
-}
-
 .fourDims-area-bg {
     position: absolute;
     top: -10%;
@@ -308,8 +299,8 @@
         height: 400px;
     }
     .image {
-        width: 300px;
-        height: 277.5px;
+        width: 250px;
+        height: 231.25px;
     }
     .image-deco__hand {
         width: 80px;
@@ -352,6 +343,7 @@
     }
     .fourDims-area p {
         font-size: 20px;
+        margin-bottom: 0;
     }
     .members-area-item-text .text {
         font-size: 1rem;
@@ -360,5 +352,23 @@
     .members-area-item-text .title {
         line-height: 1.5;
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width:425px) {
+    .image {
+        width: 150px;
+        height: 135.75px;
+    }
+    .fourDims-area p {
+        font-size: 18px;
+        line-height: 3.5;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:375px) {
+    .fourDims-area p {
+        font-size: 16px;
     }
 }
