@@ -32,7 +32,7 @@ $(window).scroll(function() {
 
 var clickIndex = 0;
 var clicked = false;
-var messages = ["Shhhh!", "Scroll down!", "Hello,there!", "Welcome!"];
+var messages = ["Shhhh!", "Scroll down!", "Hello, there!", "Welcome!"];
 $(".heads-ani").click(function() {
     if (clicked) {
         $(".chatBox").each(function() {
@@ -50,5 +50,11 @@ $(".heads-ani").click(function() {
             clickIndex = 0;
         }
         clicked = true;
+        setTimeout(function() {
+            $(".chatBox").each(function() {
+                $(this).removeClass("isOn");
+            });
+            clicked = false;
+        }, 1500)
     }
 });
