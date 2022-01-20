@@ -340,6 +340,11 @@
     margin-top: 75px;
 }
 
+.img-digital{
+    width:80%;
+    height:auto;
+}
+
 @media (max-width:1440px) {
     .heads-ani {
         height: 950px;
