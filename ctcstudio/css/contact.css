@@ -149,6 +149,9 @@
     .main-title {
         height: 125px;
     }
+    .form-inputs-boxs-item-title{
+        line-height:1.25;
+    }
 }
 
 @media (max-width:375px) {
