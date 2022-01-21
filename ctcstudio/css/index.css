@@ -300,13 +300,13 @@
 
 .image {
     position: absolute;
-    top: 15%;
+    margin-top: 6%;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    width: 90%;
+    width: 80%;
     z-index: 2;
     object-fit: contain;
     transform: translateZ(40px);
@@ -332,17 +332,12 @@
     margin-top: 50px;
 }
 
-.img-3d {
-    top: 5%;
+.img-digital {
+    margin-top: 10%;
 }
 
 .img-game {
-    margin-top: 75px;
-}
-
-.img-digital{
-    width:80%;
-    height:auto;
+    margin-top: 25%;
 }
 
 @media (max-width:1440px) {
@@ -561,8 +556,7 @@
         transform: scale(0.9);
     }
     .image {
-        margin-top: 5px;
-        transform: scale(0.75);
+        transform: scale(0.8);
     }
     .bg {
         transform: scale(0.85);

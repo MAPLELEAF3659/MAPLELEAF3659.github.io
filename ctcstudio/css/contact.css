@@ -141,7 +141,7 @@
         text-align: center;
     }
     .map {
-        height: 200px;
+        height: 300px;
     }
 }
 
@@ -149,13 +149,13 @@
     .main-title {
         height: 125px;
     }
-    .form-inputs-boxs-item-title{
-        line-height:1;
-    }
 }
 
 @media (max-width:375px) {
     .main-title {
         height: 75px;
+    }
+    .form-inputs-boxs-item-title {
+        line-height: 1.2;
     }
 }

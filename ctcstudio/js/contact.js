@@ -1,56 +1,3 @@
-var controller = new ScrollMagic.Controller();
-var scene;
-
-$(function() {
-    scene = new ScrollMagic.Scene({
-            triggerElement: "#trigger1",
-            duration: 0,
-            triggerHook: 0.8
-        })
-        .offset(100)
-        .setTween("#item1", 1, { opacity: 1 })
-        .on("start", function(e) {
-            phoneIconAnimation.goToAndPlay(0);
-        })
-        .addTo(controller);
-
-    scene = new ScrollMagic.Scene({
-            triggerElement: "#trigger2",
-            duration: 0,
-            triggerHook: 0.8
-        })
-        .offset(100)
-        .setTween("#item2", 1, { opacity: 1 })
-        .on("start", function(e) {
-            emailIconAnimation.goToAndPlay(0);
-        })
-        .addTo(controller);
-
-    scene = new ScrollMagic.Scene({
-            triggerElement: "#trigger3",
-            duration: 0,
-            triggerHook: 0.8
-        })
-        .offset(100)
-        .setTween("#item3", 1, { opacity: 1 })
-        .on("start", function(e) {
-            addressIconAnimation.goToAndPlay(0);
-        })
-        .addTo(controller);
-});
-
-$(window).scroll(function() {
-    $("#title-image1").css({
-        'margin-top': -$(window).scrollTop() * 0.25
-    });
-    $("#title-image2").css({
-        'margin-top': -$(window).scrollTop() * 0.4
-    });
-    $("#title-image3").css({
-        'margin-top': -$(window).scrollTop() * 0.55
-    });
-});
-
 var phoneIconAnimation = bodymovin.loadAnimation({
     container: document.getElementById('icon-phone'), // required
     path: 'image/contactUs/phone.json', // required
@@ -71,6 +18,59 @@ var emailIconAnimation = bodymovin.loadAnimation({
     renderer: 'svg', // required
     loop: false, // optional
     autoplay: true, // optional
+});
+
+var controller = new ScrollMagic.Controller();
+var scene;
+
+$(function() {
+    scene = new ScrollMagic.Scene({
+            triggerElement: "#trigger1",
+            duration: 0,
+            triggerHook: 0.8
+        })
+        .offset(350)
+        .setTween("#item1", 1, { opacity: 1 })
+        .on("start", function(e) {
+            phoneIconAnimation.goToAndPlay(0);
+        })
+        .addTo(controller);
+
+    scene = new ScrollMagic.Scene({
+            triggerElement: "#trigger2",
+            duration: 0,
+            triggerHook: 0.8
+        })
+        .offset(300)
+        .setTween("#item2", 1, { opacity: 1 })
+        .on("start", function(e) {
+            emailIconAnimation.goToAndPlay(0);
+        })
+        .addTo(controller);
+
+    scene = new ScrollMagic.Scene({
+            triggerElement: "#trigger3",
+            duration: 0,
+            triggerHook: 0.8
+        })
+        .offset(300)
+        .setTween("#item3", 1, { opacity: 1 })
+        .on("start", function(e) {
+            addressIconAnimation.goToAndPlay(0);
+        })
+        .addTo(controller);
+});
+
+$(window).scroll(function() {
+    $("#title-image1").css({
+        'margin-top': -$(window).scrollTop() * 0.25
+    });
+    $("#title-image2").css({
+        'margin-top': -$(window).scrollTop() * 0.4
+    });
+    $("#title-image3").css({
+        'margin-top': -$(window).scrollTop() * 0.55
+    });
 });
 
 // $("#info-title-phone").mouseover(function() {
