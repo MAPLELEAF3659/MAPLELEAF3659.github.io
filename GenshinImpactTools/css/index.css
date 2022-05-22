@@ -1,0 +1,37 @@
+.main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.main .title {
+  text-align: center;
+}
+
+.main .subtitle {
+  text-align: center;
+}
+
+.toolsCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.toolsCards .card {
+  padding-top: 10px;
+}
+
+.toolsCards .card .card-body .card-title {
+  font-weight: bolder;
+}
+
+.toolsCards .card .card-body .card-text {
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=index.css.map */

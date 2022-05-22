@@ -1,0 +1,27 @@
+.main {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .title {
+        text-align: center;
+    }
+    .subtitle {
+        text-align: center;
+    }
+}
+
+.toolsCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card {
+        padding-top: 10px;
+        .card-body {
+            .card-title {
+                font-weight: bolder;
+            }
+            .card-text {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

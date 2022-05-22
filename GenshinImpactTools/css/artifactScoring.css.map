@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACH,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,MAAM;EACrB,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI;CACvB;;AAED,AACI,OADG,CACH,GAAG,CAAC;EACA,cAAc,EAAE,IAAI;CACvB",
+    "sources": [
+        "artifactScoring.scss"
+    ],
+    "names": [],
+    "file": "artifactScoring.css"
+}
