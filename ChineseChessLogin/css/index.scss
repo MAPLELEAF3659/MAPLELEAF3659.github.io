@@ -1,0 +1,35 @@
+.page-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    .intro {
+        margin: 100px auto;
+        .logo-img {
+            width: 300px;
+            height: auto;
+            padding-bottom: 25px;
+        }
+    }
+    .user-name-description {
+        font-size: x-large;
+    }
+    .user-name-input {
+        font-size: large;
+        height: 50px;
+    }
+    .btn-login {
+        width: 200px;
+        height: 75px;
+        font-size: xx-large;
+    }
+}
+
+.footer {
+    background-color: rgb(240, 240, 240);
+    padding-top: 30px;
+    padding-bottom: 40px;
+}

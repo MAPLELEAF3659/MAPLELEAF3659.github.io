@@ -1,0 +1,48 @@
+.page-wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .intro {
+  margin: 100px auto;
+}
+
+.container .intro .logo-img {
+  width: 300px;
+  height: auto;
+  padding-bottom: 25px;
+}
+
+.container .user-name-description {
+  font-size: x-large;
+}
+
+.container .user-name-input {
+  font-size: large;
+  height: 50px;
+}
+
+.container .btn-login {
+  width: 200px;
+  height: 75px;
+  font-size: xx-large;
+}
+
+.footer {
+  background-color: #f0f0f0;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+/*# sourceMappingURL=index.css.map */
